@@ -1,6 +1,6 @@
 <?php
 namespace App\SmsSenders;
-class Ghasedak
+class Ghasedak implements MsgSenderInterface
 {
     public function send($phone,$text)
     {

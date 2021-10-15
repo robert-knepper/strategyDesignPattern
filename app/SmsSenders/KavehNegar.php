@@ -1,7 +1,7 @@
 <?php
 namespace App\SmsSenders;
 
-class KavehNegar
+class KavehNegar implements MsgSenderInterface
 {
     public function send($phone,$text)
     {

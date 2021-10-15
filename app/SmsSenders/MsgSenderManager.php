@@ -1,10 +1,9 @@
 <?php
 
-namespace App;
-use App\SmsSenders\KavehNegar;
+namespace App\SmsSenders;
 use Illuminate\Support\Manager;
 
-class MsgSender extends Manager
+class MsgSenderManager extends Manager
 {
 
     public function getDefaultDriver()
