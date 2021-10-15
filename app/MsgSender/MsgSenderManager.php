@@ -8,7 +8,7 @@ class MsgSenderManager extends Manager
 
     public function getDefaultDriver()
     {
-        return 'smsKave';
+        return config('msgsender.driver');
     }
 
     public function createSmsKaveDriver()
