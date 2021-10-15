@@ -1,6 +1,6 @@
 <?php
 
-namespace App\MsgSenders;
+namespace App\MsgSender;
 
 use Illuminate\Support\ServiceProvider;
 

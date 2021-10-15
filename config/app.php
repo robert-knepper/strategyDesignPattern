@@ -174,7 +174,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        \App\MsgSenders\MsgSenderServiceProvider::class
+        \App\MsgSender\MsgSenderServiceProvider::class
 
     ],
 

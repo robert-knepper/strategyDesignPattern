@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use App\MsgSender;
-use App\MsgSenders\Ghasedak;
+use App\MsgSender\Ghasedak;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider

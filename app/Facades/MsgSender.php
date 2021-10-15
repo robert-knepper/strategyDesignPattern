@@ -4,7 +4,7 @@
 namespace App\Facades;
 
 
-use App\MsgSenders\MsgSenderManager;
+use App\MsgSender\MsgSenderManager;
 use Illuminate\Support\Facades\Facade;
 /**
  * @method static void send(string $phone, string $text)
