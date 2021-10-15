@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\SmsSenders;
+namespace App\MsgSenders;
 
 
 interface MsgSenderInterface

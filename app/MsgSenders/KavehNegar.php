@@ -1,5 +1,5 @@
 <?php
-namespace App\SmsSenders;
+namespace App\MsgSenders;
 
 class KavehNegar implements MsgSenderInterface
 {

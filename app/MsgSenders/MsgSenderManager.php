@@ -1,6 +1,6 @@
 <?php
 
-namespace App\SmsSenders;
+namespace App\MsgSenders;
 use Illuminate\Support\Manager;
 
 class MsgSenderManager extends Manager
