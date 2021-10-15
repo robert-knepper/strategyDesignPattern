@@ -1,6 +1,7 @@
 <?php
 
 namespace App\SmsSenders;
+
 use Illuminate\Support\ServiceProvider;
 
 class MsgSenderServiceProvider extends ServiceProvider
@@ -8,19 +9,23 @@ class MsgSenderServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->singleton(MsgSenderManager::class);
-
-        // extend has method in Illuminate\Support\Manage class
-        // strategy pattern add custom class driver
-        app(MsgSenderManager::class)->extend('smsGhasedak',function (){
-           return new Ghasedak();
-        });
-
-
+        $this->registerMsgSenderManager();
+        $this->registerMsgSenderDriver();
     }
 
-    public function boot()
+    protected function registerMsgSenderManager()
     {
-        //
+        $this->app->singleton('msgSender', function ($app) {
+            return new MsgSenderManager($app);
+        });
+    }
+
+    protected function registerMsgSenderDriver(){
+        // extend has method in Illuminate\Support\Manage class
+        // strategy pattern add custom class driver
+        app('msgSender')->extend('smsGhasedak', function () {
+            return new Ghasedak();
+        });
+
     }
 }
