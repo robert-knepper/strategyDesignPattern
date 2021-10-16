@@ -9,7 +9,7 @@ For training you can see history commits
 Parts that created 
 
 - Manager driver 
-- setvice provider
+- service provider
 - driver
 - facade
 - config
